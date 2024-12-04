@@ -9,7 +9,9 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                sudo apt install python3-fire==0.4.0
+                python3 -m venv venv
+                source venv/bin/activate
+                pip install fire==0.4.0
                 '''
             }
         }
