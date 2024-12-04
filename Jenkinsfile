@@ -9,7 +9,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                pip3 install -r requirements.txt
+                apt install python3-fire==0.4.0
                 '''
             }
         }
